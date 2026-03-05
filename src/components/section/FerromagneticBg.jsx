@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, memo } from 'react';
 
-const FerromagneticBg = memo(() => {
+const FerroMagneticBg = memo(() => {
   const canvasRef = useRef(null);
   const mouseRef = useRef({ x: -1000, y: -1000 }); // Start off-screen
 
@@ -114,4 +114,4 @@ const FerromagneticBg = memo(() => {
   );
 });
 
-export default FerromagneticBg;
+export default FerroMagneticBg;
