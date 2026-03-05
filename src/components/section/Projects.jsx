@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Github, ExternalLink, Trophy, Database, ArrowRight } from 'lucide-react';
-import FerromagneticBg from './FerroMagneticBg';
+import FerromagneticBg from './j';
 
 const Projects = () => {
   const containerVariants = {
