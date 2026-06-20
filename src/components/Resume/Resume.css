@@ -1,0 +1,180 @@
+.resume {
+  padding: var(--space-4xl) var(--space-3xl) var(--space-4xl) calc(70px + var(--space-3xl));
+  background: var(--bg-dark-surface);
+  min-height: 100vh;
+}
+
+.resume__header {
+  text-align: center;
+  margin-bottom: var(--space-3xl);
+}
+
+.resume__columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3xl);
+  margin-bottom: var(--space-2xl);
+}
+
+.resume__column-title {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--gold);
+  margin-bottom: var(--space-xl);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.resume__column-title svg {
+  font-size: 1.1rem;
+}
+
+.resume__timeline {
+  position: relative;
+  padding-left: var(--space-xl);
+}
+
+.resume__timeline::before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--bg-dark-container-highest);
+}
+
+.resume__item {
+  position: relative;
+  padding-bottom: var(--space-xl);
+  padding-left: var(--space-lg);
+}
+
+.resume__item:last-child {
+  padding-bottom: 0;
+}
+
+.resume__item::before {
+  content: '';
+  position: absolute;
+  left: -19px;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--gold);
+  border: 3px solid var(--bg-dark-surface);
+  z-index: 2;
+  box-shadow: 0 0 10px rgba(245, 197, 24, 0.3);
+}
+
+.resume__year {
+  display: inline-block;
+  padding: 3px 12px;
+  background: var(--gold);
+  color: var(--bg-dark);
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: var(--radius);
+  margin-bottom: var(--space-sm);
+  letter-spacing: 0.05em;
+}
+
+.resume__role {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-light);
+  margin-bottom: 4px;
+}
+
+.resume__org {
+  font-size: 0.9rem;
+  color: var(--gold-dim);
+  font-weight: 500;
+  margin-bottom: var(--space-sm);
+}
+
+.resume__desc {
+  font-size: 0.85rem;
+  color: var(--text-light-dim);
+  line-height: 1.6;
+}
+
+.resume__link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  color: var(--gold);
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: var(--space-sm);
+  transition: color var(--transition-fast);
+  text-decoration: underline;
+}
+
+.resume__link:hover {
+  color: var(--gold-light);
+}
+
+/* Download CV Button */
+.resume__download {
+  text-align: center;
+  margin-top: var(--space-2xl);
+}
+
+.resume__download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: 14px 36px;
+  background: var(--gold);
+  color: var(--bg-dark);
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-radius: var(--radius);
+  transition: all var(--transition-base);
+  border: 2px solid var(--gold);
+  text-decoration: none;
+}
+
+.resume__download-btn:hover {
+  background: transparent;
+  color: var(--gold);
+  box-shadow: var(--shadow-gold);
+}
+
+/* === Responsive === */
+@media (max-width: 1023px) {
+  .resume {
+    padding: var(--space-3xl) var(--space-lg);
+    padding-top: calc(60px + var(--space-3xl));
+  }
+
+  .resume__columns {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
+}
+
+@media (max-width: 600px) {
+  .resume {
+    padding: var(--space-2xl) var(--space-md);
+    padding-top: calc(60px + var(--space-2xl));
+  }
+
+  .resume__role {
+    font-size: 1rem;
+  }
+}

@@ -1,29 +1,27 @@
 import React from 'react';
-import Navbar from './components/layout/Navbar'; 
-import Hero from './components/section/Hero'; 
-import About from './components/section/About'; 
-import Skills from './components/section/Skills';
-import Projects from './components/section/Projects';
-import Contact from './components/section/Contact';
-import Footer from './components/layout/Footer';
+import Header from './components/Header/Header';
+import Hero from './components/Hero/Hero';
+import About from './components/About/About';
+import Resume from './components/Resume/Resume';
+import Portfolio from './components/Portfolio/Portfolio';
+import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
+import './App.css';
 
 function App() {
   return (
+    <div className="app">
+      <Header />
 
-    <div className="min-h-screen overflow-x-hidden bg-slate-50 dark:bg-[#0a0a0f] text-slate-900 dark:text-slate-100 font-sans selection:bg-blue-200 dark:selection:bg-blue-900 transition-colors duration-300">
-      
-      <Navbar />
-      
-      <main>
-        <div id="home"><Hero /></div>
-        <div id="about"><About /></div>
-        <div id="skills"><Skills /></div>
-        <div id="projects"><Projects /></div>
-        <div id="contact"><Contact /></div>
+      <main className="app__main">
+        <section id="home"><Hero /></section>
+        <section id="about"><About /></section>
+        <section id="resume"><Resume /></section>
+        <section id="portfolio"><Portfolio /></section>
+        <section id="contact"><Contact /></section>
       </main>
 
       <Footer />
-      
     </div>
   );
 }
