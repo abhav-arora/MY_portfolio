@@ -24,7 +24,7 @@ const projects = [
     category: 'ml',
     color: 'linear-gradient(135deg, #2a2a2a 0%, #474747 100%)',
     icon: '📦',
-    githubUrl: 'https://github.com/abhav-arora/smart-allocator',
+    githubUrl: 'https://github.com/Darshini-Shah/DBW_PROJECT',
   },
   {
     id: 3,
@@ -35,7 +35,7 @@ const projects = [
     category: 'web',
     color: 'linear-gradient(135deg, #131313 0%, #353535 100%)',
     icon: '🎓',
-    githubUrl: 'https://github.com/abhav-arora/campus-connect',
+    githubUrl: 'https://github.com/Ayushman404/Campus_Connect',
   },
   {
     id: 4,
@@ -46,7 +46,7 @@ const projects = [
     category: 'ml',
     color: 'linear-gradient(135deg, #9a9078 0%, #4e4633 100%)',
     icon: '🛡️',
-    githubUrl: 'https://github.com/abhav-arora/mind-guard',
+    githubUrl: 'https://github.com/Ayushman404/droidrun_devsprint',
   },
   {
     id: 5,
@@ -57,7 +57,7 @@ const projects = [
     category: 'web',
     color: 'linear-gradient(135deg, #F5C518 0%, #9a9078 100%)',
     icon: '⚡',
-    githubUrl: 'https://github.com/abhav-arora/portfolio',
+    githubUrl: 'https://github.com/abhav-arora/MY_portfolio',
   },
   {
     id: 6,
@@ -68,7 +68,7 @@ const projects = [
     category: 'ml',
     color: 'linear-gradient(135deg, #353535 0%, #131313 100%)',
     icon: '📹',
-    githubUrl: 'https://github.com/abhav-arora/video-rag',
+    githubUrl: 'https://github.com/abhav-arora/video-RAG-app',
   },
 ];
 
