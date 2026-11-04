@@ -5,22 +5,17 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "node scripts/validate-content.mjs && vite build && node scripts/generate-feed.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check": "node scripts/validate-content.mjs",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
-    "@emailjs/browser": "^4.4.1",
-    "@tailwindcss/vite": "^4.2.1",
-    "framer-motion": "^12.34.5",
-    "gsap": "^3.14.2",
     "lucide-react": "^0.576.0",
-    "ogl": "^1.0.11",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "react-icons": "^5.6.0",
-    "tailwindcss": "^4.2.1",
-    "three": "^0.183.2"
+    "react-markdown": "^10.1.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
